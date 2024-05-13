@@ -2,11 +2,13 @@ package service
 
 import (
 	"context"
+	"time"
+
+	"golang.org/x/crypto/bcrypt"
+
 	v1 "github.com/go-nunu/nunu-layout-advanced/api/v1"
 	"github.com/go-nunu/nunu-layout-advanced/internal/model"
 	"github.com/go-nunu/nunu-layout-advanced/internal/repository"
-	"golang.org/x/crypto/bcrypt"
-	"time"
 )
 
 type UserService interface {

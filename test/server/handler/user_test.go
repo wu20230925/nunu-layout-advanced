@@ -5,23 +5,23 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	v1 "github.com/go-nunu/nunu-layout-advanced/api/v1"
-	"github.com/go-nunu/nunu-layout-advanced/internal/handler"
-	"github.com/go-nunu/nunu-layout-advanced/internal/middleware"
-	jwt2 "github.com/go-nunu/nunu-layout-advanced/pkg/jwt"
-	"github.com/go-nunu/nunu-layout-advanced/test/mocks/service"
-	"time"
-
 	"net/http"
 	"net/http/httptest"
 	"os"
 	"testing"
+	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-nunu/nunu-layout-advanced/pkg/config"
-	"github.com/go-nunu/nunu-layout-advanced/pkg/log"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
+
+	v1 "github.com/go-nunu/nunu-layout-advanced/api/v1"
+	"github.com/go-nunu/nunu-layout-advanced/internal/handler"
+	"github.com/go-nunu/nunu-layout-advanced/internal/middleware"
+	"github.com/go-nunu/nunu-layout-advanced/pkg/config"
+	jwt2 "github.com/go-nunu/nunu-layout-advanced/pkg/jwt"
+	"github.com/go-nunu/nunu-layout-advanced/pkg/log"
+	"github.com/go-nunu/nunu-layout-advanced/test/mocks/service"
 )
 
 var (

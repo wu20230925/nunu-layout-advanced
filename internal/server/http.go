@@ -2,6 +2,10 @@ package server
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/spf13/viper"
+	swaggerfiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
+
 	apiV1 "github.com/go-nunu/nunu-layout-advanced/api/v1"
 	"github.com/go-nunu/nunu-layout-advanced/docs"
 	"github.com/go-nunu/nunu-layout-advanced/internal/handler"
@@ -9,9 +13,6 @@ import (
 	"github.com/go-nunu/nunu-layout-advanced/pkg/jwt"
 	"github.com/go-nunu/nunu-layout-advanced/pkg/log"
 	"github.com/go-nunu/nunu-layout-advanced/pkg/server/http"
-	"github.com/spf13/viper"
-	swaggerfiles "github.com/swaggo/files"
-	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
 func NewHTTPServer(

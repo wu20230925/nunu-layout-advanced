@@ -2,10 +2,12 @@ package server
 
 import (
 	"context"
-	"github.com/go-co-op/gocron"
-	"github.com/go-nunu/nunu-layout-advanced/pkg/log"
-	"go.uber.org/zap"
 	"time"
+
+	"github.com/go-co-op/gocron"
+	"go.uber.org/zap"
+
+	"github.com/go-nunu/nunu-layout-advanced/pkg/log"
 )
 
 type Task struct {
